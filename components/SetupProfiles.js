@@ -48,8 +48,9 @@ const styles = StyleSheet.create({
 
 });
 
-class Locker extends React.Component {
+class SetupProfiles extends React.Component {
     
+    /*
     constructor(props) {
       super(props);
       this.state = {
@@ -62,18 +63,17 @@ class Locker extends React.Component {
         acceso: !this.state.acceso,
       });
     }
-  
+  */
     render() {
       return (
         <View style={styles.viewStyle}>
           <Text style={styles.textStyle} >
-            Modalità lucchetto: {this.state.acceso ? 'Attiva' : 'Disattiva'}
+            Modifica profili di aiuto
           </Text>
           <View style={styles.viewButtonStyle}>
             <Button
               style={styles.buttonStyle}
-              className= "Locker"            
-              title={this.state.acceso ? 'Disattiva' : 'Attiva'}
+              title='Vai alle impostazioni'
               onPress={this.handleClick}
             />
           </View>
@@ -82,4 +82,4 @@ class Locker extends React.Component {
     }
   }
   
-  export default Locker;
+  export default SetupProfiles;

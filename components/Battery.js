@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     
         viewStyle: {
             
-            height: '20%',
+            height: '15%',
             backgroundColor:'white',
             margin: 10,
             borderRadius: 5,
