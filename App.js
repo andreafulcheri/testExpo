@@ -13,8 +13,8 @@ const styles = StyleSheet.create({
         flex: 1,
         margin: 0,
         backgroundColor: '#cce0ff'
-
-    }
+        
+    } 
 
 });
 
@@ -23,15 +23,15 @@ class App extends Component {
         
         return (
             <View style={styles.viewStyle}>
-                <StatusBar hidden= {true}/>
+                    <StatusBar hidden= {true}/>
                     <Statusbar stato='1' />
-                    <Battery carica='81%'/>
+                    <Battery carica='59%'/>
                     <Modes/>
                     <SetupButton />
                     <Locker/>
             </View>
         );
     }
-};
+}
 
 export default App;

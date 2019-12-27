@@ -63,9 +63,9 @@ class Battery extends Component {
 
         var num = parseFloat(this.props.carica);
         
-        if(num > 80 ){
+        if(num > 60 ){
             return ('#00ff00')
-        }else if (num > 40) {
+        }else if (num > 30) {
             return ('#ffff00')
         }else {
             return ('#ff3300')

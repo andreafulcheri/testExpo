@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import {View ,Button ,StyleSheet  } from 'react-native'
+import {View ,Button ,StyleSheet, Text} from 'react-native'
 
 const styles = StyleSheet.create({
 
@@ -11,10 +11,9 @@ const styles = StyleSheet.create({
 
         viewButtonStyle:{
 
-            flex:1,
-            alignItems: 'center',
-            flexDirection: 'row',
-            margin: 20
+            flex: 1 ,
+            marginHorizontal: 20,
+            marginVertical : 10
 
         },
     
@@ -41,6 +40,13 @@ const styles = StyleSheet.create({
 
         },
 
+        textStyle: {
+            fontSize: 20 ,
+            color:'#001a00',
+            marginHorizontal: 20,
+            marginTop: 10
+        }
+
 });
 
 class Modes extends Component {
@@ -48,15 +54,16 @@ class Modes extends Component {
     render () {
         return (
             <View style={styles.viewStyle}>
+            <Text style={styles.textStyle}>Modalità :</Text>
                 <View style={{flexDirection:'row'}} >
                     <View style={styles.viewButtonStyle}>
-                        <Button style={styles.buttonStyle} title ='Modalità 1'/>
+                        <Button style={styles.buttonStyle} title ='1'/>
                     </View>
                     <View style={styles.viewButtonStyle}>
-                        <Button style={styles.buttonStyle} title ='Modalità 2'/>
+                        <Button style={styles.buttonStyle} title ='2'/>
                     </View>
                     <View style={styles.viewButtonStyle}>
-                        <Button style={styles.buttonStyle} title ='Modalità 3'/>
+                        <Button style={styles.buttonStyle} title ='3'/>
                     </View>
                 </View>
                 <View style={styles.viewButtonStopStyle}>

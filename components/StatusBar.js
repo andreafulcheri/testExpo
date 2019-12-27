@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         height: '7%',
         backgroundColor:'white',
         margin: 10,
-        marginTop: 10,
+        marginTop: 20,
         borderRadius: 5,
         shadowColor: "#000",
         shadowOffset:{
@@ -80,6 +80,6 @@ class StatusBar extends Component {
             </View>
         );
     }
-};
+}
 
 export default StatusBar;
